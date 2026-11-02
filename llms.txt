@@ -17,5 +17,5 @@
 - Paolo: Product & Operations Manager.
 
 ## Pagine
-- [Home](https://a2digitalsolutions.github.io/)
-- [Privacy](https://a2digitalsolutions.github.io/privacy.html)
+- [Home](https://www.a2digital.it/)
+- [Privacy](https://www.a2digital.it/privacy.html)
