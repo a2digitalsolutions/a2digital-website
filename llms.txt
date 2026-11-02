@@ -17,7 +17,7 @@
 
 ## Demo
 - Negozio di prova Stockflow: https://store.emcdigitalsolutions.it/login
-- Scheda prodotto iVoucher: https://www.emcdigitalsolutions.it/ivoucher.html
+- Negozio di prova iVoucher: https://ivoucher-demo.49.13.173.127.sslip.io/
 
 ## Pagine
 - [Home](https://www.a2digital.it/)
