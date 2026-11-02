@@ -1,0 +1,21 @@
+# A2Digital Solutions
+
+> Software house italiana (Sicilia) che sviluppa prodotti digitali per piccole e medie imprese: gestionali per negozi, prenotazioni online, gift card e fidelity digitali, controllo accessi, gestionali su misura, siti web ed e-commerce. Motto: «Grow together», cresciamo insieme. Contatto: aduedigital@gmail.com
+
+## Prodotti
+- Stockflow: gestionale cloud per negozi (cassa anche offline, magazzino multi-negozio, taglie e colori, inventario fisico con lettore, margini e invenduto, fornitori e ordini, gift card, buoni sconto, fidelity con QR, ruoli separati, chiusura giornaliera via email). Disponibile, in uso in negozi di abbigliamento.
+- iVoucher: gift card, carnet e buoni digitali con QR validati dal telefono, non utilizzabili due volte. Disponibile.
+- OpenGate: prenotazione e pagamento di campi e spazi con apertura automatica del cancello solo nella fascia prenotata. In uso presso un circolo sportivo.
+- Prenotazioni online: agenda per ristoranti, barbieri, centri estetici, studi, campi sportivi. Su misura.
+- Fidelity digitale: tessera con QR, punti, premi e messaggi ai clienti. Su misura.
+- Gestionale ERP/CRM su misura. Su misura.
+- Siti web ed e-commerce: esempio La Compagnia del Gluten Free (negozio online in 4 lingue).
+- Farmacia e salute: ricette e ordini via WhatsApp gestiti in ordine, con consegna a domicilio o ritiro in sede. In arrivo.
+
+## Chi siamo
+- Enrico: Full Stack Developer e Software Architect, oltre 15 anni di sviluppo software, docente di informatica.
+- Paolo: Product & Operations Manager.
+
+## Pagine
+- [Home](https://a2digitalsolutions.github.io/)
+- [Privacy](https://a2digitalsolutions.github.io/privacy.html)
