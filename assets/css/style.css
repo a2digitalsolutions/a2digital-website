@@ -686,7 +686,9 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
 .fid-app .app-note{margin:0 0 16px}
 .kitchen .kpis{margin-bottom:14px}
 @media (max-width:640px){
-  .eyebrow{font-size:10.5px;letter-spacing:.1em;padding:7px 12px}
+  .eyebrow{font-size:9.5px;letter-spacing:.08em;padding:7px 12px;white-space:nowrap}
+  .hero h1 .line{display:inline}
+  .hero h1 .line:last-child{display:block}
   .hero-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
   .hero-proof b{font-size:26px}
   .hero-proof span{font-size:12px}
