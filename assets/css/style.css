@@ -696,3 +696,7 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
   .hero-art .c1{top:2%}
   .hero-art .c3{bottom:-2%}
 }
+.more-row{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:14px}
+.cta-pair{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.demo-hint{text-align:center;font-size:14px;color:var(--muted);margin:16px 0 0}
+.avatar svg{width:28px;height:28px;fill:none;stroke:#1a1203;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}

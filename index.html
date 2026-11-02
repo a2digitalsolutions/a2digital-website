@@ -84,7 +84,7 @@
         {"@type": "Question", "name": "Devo installare programmi o comprare computer nuovi?", "acceptedAnswer": {"@type": "Answer", "text": "No. I nostri prodotti funzionano dal browser di computer, tablet e telefono. Per la cassa si possono collegare lettori di codici a barre e stampanti per scontrini."}},
         {"@type": "Question", "name": "Quanto costa un progetto?", "acceptedAnswer": {"@type": "Answer", "text": "Dipende da cosa serve: i prodotti pronti hanno un canone mensile, i progetti su misura un preventivo dopo una prima chiacchierata gratuita. Scrivici a aduedigital@gmail.com."}},
         {"@type": "Question", "name": "I miei dati sono al sicuro?", "acceptedAnswer": {"@type": "Answer", "text": "Sì: server in Europa, connessioni cifrate, backup quotidiani e accessi separati per ogni ruolo. I dati restano di proprietà del cliente."}},
-        {"@type": "Question", "name": "Posso provare Stockflow prima di decidere?", "acceptedAnswer": {"@type": "Answer", "text": "Sì, c'è un negozio di prova completo con dati di esempio. Scrivici e ti mandiamo l'accesso."}}
+        {"@type": "Question", "name": "Posso provare Stockflow prima di decidere?", "acceptedAnswer": {"@type": "Answer", "text": "Sì: c'è un negozio di prova completo con dati di esempio su https://store.emcdigitalsolutions.it/login. Si entra con un clic e si può fare anche una vendita."}}
       ]
     }
   ]
@@ -376,7 +376,7 @@
         <h3>Stockflow</h3>
         <p class="p-claim">Il gestionale completo per il tuo negozio.</p>
         <p>Cassa veloce anche senza internet, magazzino su più negozi, inventario con lettore, margini, fornitori, gift card, fidelity e chiusura di cassa via email.</p>
-        <a href="#stockflow" class="more">Guarda come funziona <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="more-row"><a href="#stockflow" class="more">Guarda come funziona <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="https://store.emcdigitalsolutions.it/login" target="_blank" rel="noopener" class="more">Apri la demo <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div>
         </div>
         <img src="assets/img/prodotti/sf-dashboard.webp" alt="Dashboard di Stockflow con vendite, resi, gift card e valore di magazzino" class="p-shot" loading="lazy" width="1440" height="900">
       </article>
@@ -387,6 +387,7 @@
         <h3>iVoucher</h3>
         <p class="p-claim">Gift card e buoni con QR.</p>
         <p>Buoni regalo, carnet a ingressi e card a scalare con il marchio del negozio. Si validano col telefono e non si possono usare due volte.</p>
+        <div class="more-row"><a href="#laboratorio" class="more" data-lab="t-gift">Provalo qui <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="https://www.emcdigitalsolutions.it/ivoucher.html" target="_blank" rel="noopener" class="more">Scheda prodotto <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a></div>
         <div class="voucher-mini" aria-hidden="true">
           <div><small>BUONO REGALO</small><b>€ 50</b><em>A2-7KQ4</em></div>
           <svg viewBox="0 0 29 29" class="qr"><path d="M1 1h7v7H1zM21 1h7v7h-7zM1 21h7v7H1zM3 3v3h3V3zM23 3v3h3V3zM3 23v3h3v-3zM10 1h2v2h-2zM14 2h3v2h-3zM10 5h4v2h-4zM16 6h2v4h-2zM10 9h3v2h-3zM1 10h3v2H1zM6 10h3v3H6zM14 11h4v2h-4zM20 10h3v3h-3zM25 10h3v2h-3zM1 14h2v3H1zM5 15h4v2H5zM11 13h2v4h-2zM15 15h3v3h-3zM20 15h2v2h-2zM24 14h4v2h-4zM10 19h3v2h-3zM15 20h2v3h-2zM19 19h4v2h-4zM25 18h3v4h-3zM10 23h3v5h-3zM19 23h2v3h-2zM23 24h5v2h-5zM14 25h3v3h-3z"/></svg>
@@ -490,7 +491,8 @@
       <li class="reveal"><b>Ruoli separati</b><span>Il titolare vede tutto, la commessa solo la cassa del suo negozio.</span></li>
       <li class="reveal"><b>Chiusura via email</b><span>Ogni sera il riepilogo della giornata arriva nella tua casella.</span></li>
     </ul>
-    <div class="center reveal"><a href="#contatti" class="btn btn-gold" data-magnetic data-subject="Vorrei provare Stockflow">Chiedi l'accesso al negozio di prova</a></div>
+    <div class="center reveal cta-pair"><a href="https://store.emcdigitalsolutions.it/login" target="_blank" rel="noopener" class="btn btn-gold" data-magnetic>Apri il negozio di prova <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a><a href="#contatti" class="btn btn-ghost" data-subject="Vorrei Stockflow nel mio negozio">Lo voglio nel mio negozio</a></div>
+    <p class="demo-hint reveal">Entra con un clic come titolare, responsabile o cassiera: i dati sono di esempio e si azzerano ogni notte.</p>
   </div>
 </section>
 
@@ -653,15 +655,15 @@
     </div>
     <div class="duo reveal">
       <div class="person">
-        <span class="avatar">E</span>
-        <h3>Enrico</h3>
+        <span class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
+        <h3>Sviluppo e architettura</h3>
         <p class="role">Full Stack Developer · Software Architect</p>
         <p>Oltre quindici anni di sviluppo software e docente di informatica. Progetta e costruisce i prodotti: gestionali, piattaforme cloud, app e sistemi che dialogano con casse, lettori, stampanti e cancelli.</p>
       </div>
       <div class="plus" aria-hidden="true">+</div>
       <div class="person">
-        <span class="avatar">P</span>
-        <h3>Paolo</h3>
+        <span class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></span>
+        <h3>Prodotto e operazioni</h3>
         <p class="role">Product &amp; Operations Manager</p>
         <p>Trasforma le esigenze delle attività in prodotti chiari: priorità, processi, avvio e formazione. Fa in modo che il software funzioni davvero nella giornata di chi lo usa.</p>
       </div>
@@ -682,7 +684,7 @@
       <details class="reveal"><summary>Devo installare programmi o comprare computer nuovi?</summary><p>No. I nostri prodotti funzionano dal browser di computer, tablet e telefono. Per la cassa si possono collegare lettori di codici a barre e stampanti per scontrini.</p></details>
       <details class="reveal"><summary>Quanto costa un progetto?</summary><p>Dipende da cosa serve: i prodotti pronti hanno un canone mensile, i progetti su misura un preventivo dopo una prima chiacchierata gratuita. Scrivici a <a href="mailto:aduedigital@gmail.com">aduedigital@gmail.com</a>.</p></details>
       <details class="reveal"><summary>I miei dati sono al sicuro?</summary><p>Sì: server in Europa, connessioni cifrate, backup quotidiani e accessi separati per ogni ruolo. I dati restano di proprietà del cliente.</p></details>
-      <details class="reveal"><summary>Posso provare Stockflow prima di decidere?</summary><p>Sì, c'è un negozio di prova completo con dati di esempio. Scrivici e ti mandiamo l'accesso.</p></details>
+      <details class="reveal"><summary>Posso provare Stockflow prima di decidere?</summary><p>Sì: c'è un <a href="https://store.emcdigitalsolutions.it/login" target="_blank" rel="noopener">negozio di prova</a> completo con dati di esempio. Entri con un clic e puoi fare anche una vendita.</p></details>
     </div>
   </div>
 </section>

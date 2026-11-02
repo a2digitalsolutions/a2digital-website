@@ -13,8 +13,11 @@
 - Farmacia e salute: ricette e ordini via WhatsApp gestiti in ordine, con consegna a domicilio o ritiro in sede. In arrivo.
 
 ## Chi siamo
-- Enrico: Full Stack Developer e Software Architect, oltre 15 anni di sviluppo software, docente di informatica.
-- Paolo: Product & Operations Manager.
+- Due soci: sviluppo e architettura software (Full Stack Developer e Software Architect, oltre 15 anni di esperienza, docente di informatica) e prodotto e operazioni (Product & Operations Manager).
+
+## Demo
+- Negozio di prova Stockflow: https://store.emcdigitalsolutions.it/login
+- Scheda prodotto iVoucher: https://www.emcdigitalsolutions.it/ivoucher.html
 
 ## Pagine
 - [Home](https://www.a2digital.it/)

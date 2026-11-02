@@ -222,6 +222,9 @@
     });
   });
 
+  // i link «Provalo qui» aprono direttamente la demo giusta
+  $$('[data-lab]').forEach(a => a.addEventListener('click', () => selectTab($('#' + a.dataset.lab))));
+
   const confetti = host => {
     if (reduce) return;
     const box = document.createElement('div');
