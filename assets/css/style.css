@@ -21,7 +21,6 @@
   --text:#c9cfdc;
   --muted:#8c96ad;
   --live:#5fd39a;
-  --soon:#8fb4ff;
   --grad-gold:linear-gradient(120deg,#fff1c1 0%,#f3cd6a 28%,#d4a23a 58%,#f7dd94 82%,#b8842a 100%);
   --glass:linear-gradient(160deg,rgba(19,38,79,.62),rgba(6,18,43,.72));
   --radius:22px;
@@ -161,7 +160,6 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
 .tag{font-size:12px;font-weight:600;letter-spacing:.03em;padding:5px 11px;border-radius:999px;border:1px solid var(--line-soft);color:var(--muted);background:rgba(255,255,255,.03)}
 .tag-live{color:var(--live);border-color:rgba(95,211,154,.3);background:rgba(95,211,154,.08)}
 .tag-live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--live);margin-right:6px;vertical-align:1px;box-shadow:0 0 8px var(--live)}
-.tag-soon{color:var(--soon);border-color:rgba(143,180,255,.3);background:rgba(143,180,255,.08)}
 .p-icon{position:absolute;top:26px;right:26px;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(233,185,73,.2),rgba(233,185,73,.04));border:1px solid var(--line)}
 .p-icon svg{width:22px;height:22px;fill:none;stroke:var(--gold-200);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .more{display:inline-flex;align-items:center;gap:8px;color:var(--gold-200);font-weight:600;font-size:15px}
@@ -177,7 +175,6 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
 .p-gate,.p-book,.p-fid{grid-column:span 2;display:flex;flex-direction:column}
 .p-book .slots,.p-fid .stamps{margin-top:auto}
 .p-erp,.p-web{grid-column:span 3}
-.p-pharma{grid-column:span 6}
 
 .voucher-mini{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px;padding:14px 16px;border-radius:14px;background:linear-gradient(135deg,#13264f,#0a1a3a);border:1px solid var(--line);position:relative;overflow:hidden}
 .voucher-mini::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-gold)}
@@ -202,11 +199,6 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
 .stamps .on{border:0;background:var(--grad-gold);box-shadow:0 0 12px rgba(233,185,73,.4)}
 .stamps .gift{border-style:solid;border-color:var(--gold-400);position:relative}
 .stamps .gift::after{content:"★";position:absolute;inset:0;display:grid;place-items:center;font-size:12px;color:var(--gold-200);font-style:normal}
-
-.flow{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;counter-reset:f}
-.flow li{position:relative;font-size:13.5px;line-height:1.35;color:var(--silver);padding:14px 12px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line-soft)}
-.flow b{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;margin-bottom:10px;font:700 13px/1 var(--font-display);color:#1a1203;background:var(--grad-gold)}
-.flow li:not(:last-child)::after{content:"";position:absolute;top:26px;right:-10px;width:10px;height:1.5px;background:var(--gold-500)}
 
 /* ---------- spotlight stockflow ---------- */
 .sf-stage{position:relative;padding:0 6% 40px 0}
@@ -340,7 +332,7 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
   .mnav a:not(.btn):hover{background:rgba(233,185,73,.08)}
   .mnav .btn{margin-top:8px}
   .bento{grid-template-columns:repeat(2,1fr)}
-  .p-stock,.p-pharma{grid-column:span 2}
+  .p-stock{grid-column:span 2}
   .p-voucher,.p-gate,.p-book,.p-fid,.p-erp,.p-web{grid-column:span 1}
   .feat-grid{grid-template-columns:repeat(2,1fr)}
   .works{grid-template-columns:repeat(2,1fr)}
@@ -358,9 +350,6 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
   .growth{display:none}
   .about{grid-template-columns:1fr;gap:50px}
   .contact{grid-template-columns:1fr}
-  .flow{grid-template-columns:1fr 1fr}
-  .flow li:last-child{grid-column:span 2}
-  .flow li::after{display:none}
   .sf-stage{padding:0 0 30px}
   .phone{width:30%;right:-6px;bottom:-10px}
 }

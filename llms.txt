@@ -10,7 +10,6 @@
 - Fidelity digitale: tessera con QR, punti, premi e messaggi ai clienti. Su misura.
 - Gestionale ERP/CRM su misura. Su misura.
 - Siti web ed e-commerce: esempio La Compagnia del Gluten Free (negozio online in 4 lingue).
-- Farmacia e salute: ricette e ordini via WhatsApp gestiti in ordine, con consegna a domicilio o ritiro in sede. In arrivo.
 
 ## Chi siamo
 - Due soci: sviluppo e architettura software (Full Stack Developer e Software Architect, oltre 15 anni di esperienza, docente di informatica) e prodotto e operazioni (Product & Operations Manager).
