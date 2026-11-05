@@ -4,3 +4,6 @@ logo.jpeg
 *.bak
 .DS_Store
 Thumbs.db
+
+# Sorgenti delle firme email (si pubblica solo il logo in assets/img/firma)
+firme/
