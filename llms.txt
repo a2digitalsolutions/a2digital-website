@@ -3,7 +3,7 @@
 > Software house italiana (Sicilia) che sviluppa prodotti digitali per piccole e medie imprese: gestionali per negozi, prenotazioni online, gift card e fidelity digitali, controllo accessi, gestionali su misura, siti web ed e-commerce. Motto: «Grow together», cresciamo insieme. Contatto: aduedigital@gmail.com
 
 ## Prodotti
-- Stockflow: gestionale cloud per negozi (cassa anche offline, magazzino multi-negozio, taglie e colori, inventario fisico con lettore, margini e invenduto, fornitori e ordini, gift card, buoni sconto, fidelity con QR, ruoli separati, chiusura giornaliera via email). Disponibile, in uso ogni giorno in un negozio di abbigliamento con due punti vendita.
+- Sartonero (prima chiamato Stockflow, sito ufficiale https://sartonero.it/, sviluppato da EMC Digital Solutions): gestionale per negozi di abbigliamento (cassa anche offline, magazzino multi-negozio, taglie e colori, inventario fisico con lettore, margini e invenduto, fornitori e ordini, gift card, buoni sconto, fidelity con QR, ruoli separati, chiusura giornaliera via email). Disponibile, in uso ogni giorno in un negozio di abbigliamento con due punti vendita.
 - iVoucher: gift card, carnet e buoni digitali con QR validati dal telefono, non utilizzabili due volte. Disponibile.
 - OpenGate: prenotazione e pagamento di campi e spazi con apertura automatica del cancello solo nella fascia prenotata. In uso presso un circolo sportivo.
 - Prenotazioni online: agenda per ristoranti, barbieri, centri estetici, studi, campi sportivi. Su misura.
@@ -15,7 +15,8 @@
 - Due soci: sviluppo e architettura software (Full Stack Developer e Software Architect, oltre 15 anni di esperienza, docente di informatica) e prodotto e operazioni (Product & Operations Manager).
 
 ## Demo
-- Negozio di prova Stockflow: https://store.emcdigitalsolutions.it/login
+- Negozio di prova Sartonero: https://erp-demo.emcdigitalsolutions.it/login
+- Sito di Sartonero (funzioni e manuale): https://sartonero.it/
 - Negozio di prova iVoucher: https://demo-ivoucher.a2digital.it/
 
 ## Pagine

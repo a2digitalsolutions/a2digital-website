@@ -200,7 +200,7 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
 .stamps .gift{border-style:solid;border-color:var(--gold-400);position:relative}
 .stamps .gift::after{content:"★";position:absolute;inset:0;display:grid;place-items:center;font-size:12px;color:var(--gold-200);font-style:normal}
 
-/* ---------- spotlight stockflow ---------- */
+/* ---------- spotlight sartonero (ex stockflow) ---------- */
 .sf-stage{position:relative;padding:0 6% 40px 0}
 .sf-tabs{display:inline-flex;gap:4px;padding:5px;border-radius:999px;border:1px solid var(--line);background:rgba(6,18,43,.7);margin-bottom:22px}
 .sf-tabs button{font:600 14.5px/1 var(--font-display);color:var(--muted);background:none;border:0;padding:11px 20px;border-radius:999px;cursor:pointer;transition:color .25s,background .25s}
@@ -688,4 +688,7 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
 .more-row{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:14px}
 .cta-pair{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
 .demo-hint{text-align:center;font-size:14px;color:var(--muted);margin:16px 0 0}
+.demo-hint.sn-link{margin-top:6px}
+.demo-hint a{color:var(--gold-400);text-decoration:underline;text-decoration-color:rgba(212,175,55,.45);text-underline-offset:3px}
+.demo-hint a:hover{text-decoration-color:currentColor}
 .avatar svg{width:28px;height:28px;fill:none;stroke:#1a1203;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}

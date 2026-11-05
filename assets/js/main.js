@@ -154,7 +154,7 @@
     }, 4200);
   }
 
-  /* ---------- schede Stockflow ---------- */
+  /* ---------- schede Sartonero ---------- */
   const sfView = $('#sf-view');
   $$('.sf-tabs button').forEach(b => b.addEventListener('click', () => {
     $$('.sf-tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
