@@ -15,7 +15,7 @@
 - Due soci: sviluppo e architettura software (Full Stack Developer e Software Architect, oltre 15 anni di esperienza, docente di informatica) e prodotto e operazioni (Product & Operations Manager).
 
 ## Demo
-- Negozio di prova Sartonero: https://erp-demo.emcdigitalsolutions.it/login
+- Negozio di prova Sartonero: https://demo.sartonero.it/login
 - Sito di Sartonero (funzioni e manuale): https://sartonero.it/
 - Negozio di prova iVoucher: https://demo-ivoucher.a2digital.it/
 
