@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /bigliettievolantini/
 
 Sitemap: https://www.a2digital.it/sitemap.xml
-Disallow: /bigliettievolantini/
