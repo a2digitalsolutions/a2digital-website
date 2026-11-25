@@ -170,7 +170,8 @@
   }));
 
   /* ---------- contatti ---------- */
-  const MAIL = 'aduedigital@gmail.com';
+  const MAIL = 'info@a2digital.it';
+  const WA = '393717518758';
   const form = $('#cform');
   $$('[data-subject]').forEach(a => a.addEventListener('click', () => {
     const msg = form.elements.msg;
@@ -178,6 +179,7 @@
   }));
   form.addEventListener('submit', e => {
     e.preventDefault();
+    const via = e.submitter && e.submitter.dataset.via === 'mail' ? 'mail' : 'wa';
     let ok = true;
     ['nome', 'msg'].forEach(n => {
       const f = form.elements[n], bad = !f.value.trim();
@@ -191,7 +193,12 @@
     const body = `Ciao A2Digital,\n\n${form.elements.msg.value.trim()}\n\n` +
       (ints.length ? `Mi interessa: ${ints.join(', ')}\n` : '') +
       (att ? `Attività: ${att}\n` : '') + `\n${nome}`;
-    location.href = `mailto:${MAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (via === 'wa') {
+      const txt = `Ciao A2Digital! Vorrei prenotare una consulenza gratuita.\n\n${body.replace(/^Ciao A2Digital,\n\n/, '')}`;
+      window.open(`https://wa.me/${WA}?text=${encodeURIComponent(txt)}`, '_blank', 'noopener');
+    } else {
+      location.href = `mailto:${MAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
   });
   const copyBtn = $('#copyMail');
   copyBtn.addEventListener('click', async () => {

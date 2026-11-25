@@ -305,6 +305,23 @@ h1,h2,h3,h4{font-family:var(--font-display);color:var(--silver);margin:0;letter-
 .field input:focus,.field textarea:focus{outline:none;border-color:var(--gold-400);box-shadow:0 0 0 4px rgba(233,185,73,.12)}
 .field.err input,.field.err textarea{border-color:#ff8a8a}
 .fine{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
+.wa-box{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.btn-wa svg{width:20px;height:20px}
+.btn-wa:hover svg{transform:none}
+.contact-copy .wa-num{margin:0;font-size:15px;color:var(--muted)}
+.wa-num a{color:var(--silver);font-weight:600;border-bottom:1px solid rgba(233,185,73,.4)}
+.wa-num a:hover{color:var(--gold-200)}
+.contact-copy .or{margin:26px 0 10px;font:400 11px/1 var(--font-brand);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-400)}
+.cform-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cform-actions .btn{padding:15px 16px;font-size:15px}
+.cform-actions svg{width:19px;height:19px}
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:110;display:flex;align-items:center;gap:10px;padding:13px 20px 13px 14px;border-radius:999px;background:var(--grad-gold);color:#1a1203;font:600 15px/1 var(--font-display);box-shadow:0 14px 34px -10px rgba(233,185,73,.7),inset 0 1px 0 rgba(255,255,255,.55);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.wa-float svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:0 0 0 0 rgba(233,185,73,.55);animation:waPulse 2.6s ease-out infinite}
+.wa-float:hover{transform:translateY(-3px);box-shadow:0 20px 40px -12px rgba(233,185,73,.8)}
+@keyframes waPulse{70%{box-shadow:0 0 0 16px rgba(233,185,73,0)}100%{box-shadow:0 0 0 0 rgba(233,185,73,0)}}
+@media (max-width:640px){.wa-float{right:14px;bottom:14px;padding:14px}.wa-float span{display:none}.cform-actions{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.wa-float::before{animation:none}}
 
 /* ---------- footer ---------- */
 .foot{border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(2,8,22,.4),var(--navy-950));padding:70px 0 30px;margin-top:40px}
