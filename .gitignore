@@ -8,5 +8,3 @@ Thumbs.db
 # Sorgenti delle firme email (si pubblica solo il logo in assets/img/firma)
 firme/
 
-# Materiale di stampa (biglietti e volantini): non si pubblica sul sito
-bigliettievolantini/

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>A2Digital Solutions · Biglietto da visita</title>
+<!--
+  Biglietto da visita A2Digital Solutions.
+  Formato rifilato 85x55 mm, con abbondanza 2 mm per lato = 89x59 mm.
+  Area di sicurezza: testi e QR almeno 3 mm dentro il rifilo (5 mm dal bordo pagina).
+  Grafica coerente con www.a2digital.it: navy & oro, Sora / Inter / Michroma.
+-->
+<style>
+@font-face{font-family:"Sora";src:url(../assets/fonts/sora-latin-wght-normal.woff2) format("woff2");font-weight:100 800}
+@font-face{font-family:"Inter";src:url(../assets/fonts/inter-latin-wght-normal.woff2) format("woff2");font-weight:100 900}
+@font-face{font-family:"Michroma";src:url(../assets/fonts/michroma-latin-400-normal.woff2) format("woff2");font-weight:400}
+@page{size:89mm 59mm;margin:0}
+:root{
+  --navy-950:#020816;--navy-900:#030b1f;--navy-850:#06122b;--navy-800:#0a1a3a;--navy-700:#13264f;
+  --gold-50:#fff6dc;--gold-200:#f7dd94;--gold-400:#e9b949;--gold-500:#d4a23a;--gold-700:#a8741d;
+  --silver:#e8eaf0;--text:#c9cfdc;--muted:#8c96ad;
+  --grad-gold:linear-gradient(120deg,#fff1c1 0%,#f3cd6a 28%,#d4a23a 58%,#f7dd94 82%,#b8842a 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#1b1f2a}
+body{font-family:"Inter",sans-serif;-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sheet{display:flex;flex-direction:column;align-items:center;gap:10mm;padding:10mm 0}
+@media print{.sheet{display:block;padding:0}html,body{background:#030b1f}}
+.card{position:relative;width:89mm;height:59mm;overflow:hidden;contain:strict;background:var(--navy-900);break-after:page;isolation:isolate}
+.card:last-child{break-after:auto}
+.layer{position:absolute;inset:0;pointer-events:none}
+.gold-text{background:var(--grad-gold);background-size:100% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ================= FRONTE ================= */
+.front .bg{background:
+  radial-gradient(46mm 34mm at 50% 44%,rgba(38,76,160,.55),transparent 70%),
+  radial-gradient(40mm 30mm at 92% 6%,rgba(233,185,73,.20),transparent 65%),
+  radial-gradient(50mm 36mm at 4% 100%,rgba(24,52,120,.55),transparent 70%),
+  linear-gradient(160deg,#071431 0%,#030b1f 55%,#020816 100%)}
+.front .grid{opacity:.5;background-image:linear-gradient(rgba(255,255,255,.055) .15mm,transparent .15mm),linear-gradient(90deg,rgba(255,255,255,.055) .15mm,transparent .15mm);background-size:4.2mm 4.2mm;background-position:center;
+  -webkit-mask-image:radial-gradient(ellipse 60% 70% at 50% 45%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 60% 70% at 50% 45%,#000 20%,transparent 75%)}
+.orbit{position:absolute;left:50%;top:44%;border-radius:50%;border:.18mm solid rgba(233,185,73,.32);transform:translate(-50%,-50%) rotate(-14deg)}
+.orbit.o1{width:76mm;height:36mm}
+.orbit.o2{width:62mm;height:47mm;border-color:rgba(233,185,73,.16);transform:translate(-50%,-50%) rotate(22deg)}
+.orbit.o1::after,.orbit.o2::after{content:"";position:absolute;width:1.3mm;height:1.3mm;border-radius:50%;background:#ffe7a6;box-shadow:0 0 1.6mm .5mm rgba(255,214,120,.85)}
+.orbit.o1::after{left:9%;top:16%}
+.orbit.o2::after{right:4%;bottom:30%;width:.9mm;height:.9mm}
+.streak{position:absolute;left:-10mm;top:6mm;width:120mm;height:.25mm;background:linear-gradient(90deg,transparent,rgba(255,226,150,.55) 45%,rgba(255,246,220,.9) 52%,rgba(255,226,150,.4) 60%,transparent);transform:rotate(-17deg);filter:blur(.08mm)}
+.streak.s2{top:52mm;left:-20mm;width:80mm;opacity:.45;transform:rotate(-17deg)}
+.front .logo{position:absolute;left:50%;top:42%;width:54mm;transform:translate(-50%,-50%);filter:drop-shadow(0 1.2mm 3mm rgba(0,0,0,.55))}
+.front .sh{position:absolute;left:0;right:0;bottom:9.4mm;display:flex;align-items:center;justify-content:center;gap:2.4mm;font:400 6.6pt/1 "Michroma",sans-serif;letter-spacing:.36em;color:var(--gold-200);text-transform:uppercase;padding-left:.36em}
+.front .sh::before,.front .sh::after{content:"";width:9mm;height:.22mm;background:linear-gradient(90deg,transparent,var(--gold-400))}
+.front .sh::after{background:linear-gradient(90deg,var(--gold-400),transparent)}
+.front .sh-sub{position:absolute;left:0;right:0;bottom:5.9mm;text-align:center;font:500 5.3pt/1 "Inter",sans-serif;letter-spacing:.08em;color:var(--text)}
+.front .sh-sub b{color:var(--gold-400);font-weight:600}
+
+/* ================= RETRO ================= */
+.back .bg{background:
+  radial-gradient(44mm 34mm at 100% 0%,rgba(233,185,73,.17),transparent 62%),
+  radial-gradient(52mm 40mm at 0% 100%,rgba(38,76,160,.42),transparent 70%),
+  linear-gradient(150deg,#0d1f45 0%,#06122b 55%,#030b1f 100%)}
+.back .ring{position:absolute;right:-17mm;top:-19mm;width:46mm;height:46mm;border-radius:50%;border:.2mm solid rgba(233,185,73,.22);box-shadow:0 0 0 5mm rgba(233,185,73,.035),0 0 0 10mm rgba(233,185,73,.02)}
+.back .inner{position:absolute;left:5.2mm;right:5.2mm;top:5.2mm;bottom:5.2mm;display:grid;grid-template-columns:minmax(0,1fr) 21.5mm;column-gap:4.2mm}
+.brand{display:flex;align-items:center;gap:1.6mm;margin-top:-.2mm}
+.brand img{width:10.4mm;height:auto}
+.brand span{display:flex;flex-direction:column;line-height:1}
+.brand b{font:400 6.3pt/1 "Michroma",sans-serif;letter-spacing:.16em;color:var(--silver)}
+.brand i{font:400 4.3pt/1 "Michroma",sans-serif;letter-spacing:.42em;color:var(--gold-400);font-style:normal;margin-top:.7mm}
+.headline{margin-top:3.1mm;white-space:nowrap;font:700 8pt/1.16 "Sora",sans-serif;letter-spacing:-.02em;color:var(--silver)}
+.contacts{margin-top:3mm;display:flex;flex-direction:column;gap:1.55mm;list-style:none}
+.contacts li{display:flex;align-items:center;gap:1.8mm;font:600 6.9pt/1 "Inter",sans-serif;color:var(--silver);letter-spacing:.005em;white-space:nowrap}
+.contacts li small{font:500 5pt/1 "Inter",sans-serif;color:var(--muted);letter-spacing:.02em;margin-left:.4mm}
+.ico{flex:none;width:4.3mm;height:4.3mm;border-radius:50%;display:grid;place-items:center;border:.18mm solid rgba(233,185,73,.55);background:rgba(233,185,73,.08)}
+.ico svg{width:2.5mm;height:2.5mm;fill:none;stroke:var(--gold-200);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.ico.wa{background:var(--grad-gold);border:none}
+.ico.wa svg{stroke:#1a1203;stroke-width:2.1}
+.wag{fill:#1a1203!important;stroke:none!important}
+.side{display:flex;flex-direction:column;align-items:stretch}
+.qr{width:21.5mm;padding:1.1mm;border-radius:2.4mm;background:#fff;box-shadow:0 0 0 .2mm rgba(233,185,73,.55),0 1.4mm 3.5mm rgba(0,0,0,.45)}
+.qr img{display:block;width:100%;height:auto}
+.qr-cap{margin-top:1.5mm;font:400 4.5pt/1.25 "Michroma",sans-serif;letter-spacing:.14em;color:var(--gold-200);text-align:center;text-transform:uppercase}
+.cta{flex:1;margin-top:1.6mm;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.1mm;text-align:center;border-top:.18mm solid rgba(233,185,73,.35)}
+.cta small{font:400 4.5pt/1 "Michroma",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--silver)}
+.cta b{font:700 9pt/1 "Sora",sans-serif;letter-spacing:-.01em;background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+.main{display:flex;flex-direction:column}
+.svc{margin-top:auto;padding-top:2mm;border-top:.18mm solid rgba(233,185,73,.28);font:400 4.8pt/1 "Michroma",sans-serif;letter-spacing:.1em;color:var(--gold-200);text-transform:uppercase;white-space:nowrap}
+.svc i{font-style:normal;color:var(--gold-500);margin:0 .7mm}
+.foot-line{position:absolute;left:5.2mm;right:5.2mm;bottom:5.2mm;display:flex;align-items:center;gap:1.3mm;font:400 4.6pt/1 "Michroma",sans-serif;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;white-space:nowrap}
+.foot-line i{font-style:normal;color:var(--gold-500)}
+
+/* ------- solo a schermo: un po' di vita (in stampa/render è tutto fermo) ------- */
+@media screen{
+  html:not(.render) .orbit.o1{animation:sp1 26s linear infinite}
+  html:not(.render) .orbit.o2{animation:sp2 34s linear infinite reverse}
+  html:not(.render) .gold-text{background-size:220% 100%;animation:shine 7s linear infinite}
+  html:not(.render) .streak{animation:sweep 6s ease-in-out infinite}
+  @keyframes sp1{to{transform:translate(-50%,-50%) rotate(346deg)}}
+  @keyframes sp2{to{transform:translate(-50%,-50%) rotate(382deg)}}
+  @keyframes shine{to{background-position:220% 0}}
+  @keyframes sweep{0%,100%{opacity:.35}50%{opacity:1}}
+  .card{box-shadow:0 6mm 14mm rgba(0,0,0,.5)}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<!-- FRONTE -->
+<section class="card front" id="fronte">
+  <div class="layer bg"></div>
+  <div class="layer grid"></div>
+  <div class="streak"></div>
+  <div class="streak s2"></div>
+  <div class="orbit o1"></div>
+  <div class="orbit o2"></div>
+  <img class="logo" src="../assets/img/logo-a2digital.png" alt="A2Digital Solutions · Grow together">
+  <p class="sh">Software house</p>
+  <p class="sh-sub">Sviluppo software su misura <b>·</b> 15+ anni di esperienza</p>
+</section>
+
+<!-- RETRO -->
+<section class="card back" id="retro">
+  <div class="layer bg"></div>
+  <div class="ring"></div>
+  <div class="inner">
+    <div class="main">
+      <div class="brand">
+        <img src="../assets/img/emblema-a2.png" alt="">
+        <span><b>DIGITAL</b><i>SOLUTIONS</i></span>
+      </div>
+      <p class="headline">Tecnologia su misura<br>per far crescere <span class="gold-text">il tuo business.</span></p>
+      <ul class="contacts">
+        <li><span class="ico wa"><svg class="wag" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>+39 371 751 8758</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></span>info@a2digital.it</li>
+        <li><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9S14.6 18.4 12 21c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg></span>www.a2digital.it</li>
+      </ul>
+      <p class="svc">BPM<i>✦</i>ERP<i>✦</i>E-commerce<i>✦</i>App e Web</p>
+    </div>
+    <div class="side">
+      <div>
+        <div class="qr"><img src="qr-sito.svg" alt="QR www.a2digital.it"></div>
+        <p class="qr-cap">Inquadra<br>e scopri</p>
+      </div>
+      <p class="cta"><small>Prima consulenza</small><b>Gratuita</b></p>
+    </div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
